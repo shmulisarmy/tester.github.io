@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-f$9@rpa&*%u80m7n=rp7)u@+5ngk7miek+0#s#jgw2+voj(mpo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://esrogim.pythonanywhere.com"]
 
 
 # Application definition
