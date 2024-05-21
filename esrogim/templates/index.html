@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        main {
+                    margin: 8%;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    grid-gap: 20px;
+                }
+
+                .esrog {
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+    </style>
+
+    <h1>Hello World</h1>
+
+
+    <main>
+
+        {% for esrog in esrogim %}
+        <div class="esrog">
+
+            <img src="/image/{{ esrog.id }}" alt="">
+            <p>{{ esrog.description }}</p>
+            <p>{{ esrog.price }}</p>
+            <p>{{ esrog.size }}</p>
+            <p>{{ esrog.created_date }}</p>
+        </div>
+        {% endfor %}
+    </main>
+    
+</body>
+</html>
